@@ -59,8 +59,10 @@ class MainActivity : ComponentActivity() {
     }
     @Composable
     fun GetFetchHiringData() {
+        // Remember handles states and storing of data
+        // Similar to useState in React
         var apiData by remember { mutableStateOf<List<FetchHiringData>>(emptyList()) }
-        var isAscending by remember { mutableStateOf(true) } // State to toggle sorting
+        var isAscending by remember { mutableStateOf(true) }
 
         // Coroutine to call the API and update the state
         LaunchedEffect(Unit) { // LaunchedEffect similar to BehaviorSubject
@@ -89,7 +91,7 @@ class MainActivity : ComponentActivity() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color(0xFF290b2f)) // Background color
+                .background(Color(0xFF290b2f))
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
                 // Fetch Logo at the top center

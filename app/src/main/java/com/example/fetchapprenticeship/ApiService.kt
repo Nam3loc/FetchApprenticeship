@@ -47,7 +47,7 @@ class ApiService {
                         }
                     }
                 }
-                filteredDataList
+                return filteredDataList
             } else {
                 Log.d("ApiService", "Error: $responseCode. Unable to fetch data from the API.")
                 emptyList()
