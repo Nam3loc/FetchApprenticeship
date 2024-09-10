@@ -104,8 +104,8 @@ class MainActivity : ComponentActivity() {
                 // Button to toggle sorting order
                 Button(
                     onClick = { isAscending = !isAscending },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFfda71e)), // Directly pass color here
-                    shape = RoundedCornerShape(8.dp), // Rounded corners
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFfda71e)),
+                    shape = RoundedCornerShape(8.dp),
                     modifier = Modifier
                         .width(200.dp)
                         .align(Alignment.CenterHorizontally)
