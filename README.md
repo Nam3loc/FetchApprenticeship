@@ -28,7 +28,7 @@ Did this basic project to learn the basics of Kotlin, Jetpack Compose, and JUnit
 
 ## Screenshots
 <!-- Add screenshots if available -->
-
+![Example screenshot](app/src/main/res/drawable-nodpi/fetch_apprenticeship.png)
 
 ## Project Status
 The project is complete and fully functional.
